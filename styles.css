@@ -103,7 +103,7 @@ h1 #maintitle {
 
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .sectioncontainer {
     display: block;
   }
