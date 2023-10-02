@@ -51,21 +51,24 @@ h1 #maintitle {
 /* Background properties and 
      transition effect to section */
 .section {
-   background-position: center;
-   background-repeat:no-repeat;
-   height: 40vh;
-   cursor: pointer;
-   flex: 0.2;
-   margin: 2px;
-   position: relative;
-   transition: all 0.4s ease-in;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  cursor: pointer;
+  flex: 0.2;
+  margin: 2px;
+  position: relative;
+  transition: all 0.4s ease-in;
 }
 
-/* section with active class will
-     grow flex to 3 times */
+.section.others :nth-child(1) {
+  visibility: hidden;
+  display: none;
+}
+
 .section.others:hover {
 
-   transition: slide 10s sine;
+  transition: slide 10s sine;
 }
 
 .section.active {
@@ -102,11 +105,16 @@ h1 #maintitle {
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
   .sectioncontainer {
-    display:block;
+    display: block;
   }
+
   .section.others {
-      visibility: hidden;
-      height: 0px;
+    visibility: hidden;
+    height: 0px;
+  }
+
+  .section :nth-child(1) {
+    display: none;
   }
 }
 

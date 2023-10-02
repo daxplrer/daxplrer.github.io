@@ -1,6 +1,8 @@
 /.config
 /.upm
 /package-lock.json
-/package.json
+/replit.nix
 /node_modules
+/package.json
+/.replit
 /index.js
