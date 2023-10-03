@@ -35,6 +35,10 @@ h1 #maintitle {
   display: flex;
   padding-left: 0.5vw;
 }
+.maincontainer {
+  display: flex;
+  padding-left: 0.5vw;
+}
 
 /* Background properties and 
      transition effect to section */
@@ -91,10 +95,24 @@ h1 #maintitle {
   .section :nth-child(1) {
     display: none;
   }
+  .progress, .progress-bar {
+    display:none
+  }
 }
 
 h3 {
   margin: auto;
   width: 50%;
   padding: 10px;
+}
+.progress, .progress-bar {
+   border-radius: 10px;
+   height: 15px;
+}
+.progress-bar {
+  background-color: var(--bs-indigo)
+}
+.progress {
+  padding:-10px;
+  margin:20px;
 }
