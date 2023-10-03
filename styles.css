@@ -8,7 +8,6 @@ body {
   -webkit-animation: BGAnim 45s ease infinite;
   -moz-animation: BGAnim 45s ease infinite;
   -o-animation: BGAnim 45s ease infinite;
-  -gecko-animation: BGAnim 45s ease infinite;
   animation: BGAnim 45s ease infinite;
 }
 
@@ -20,17 +19,6 @@ h1 #maintitle {
   width: 100vw;
   padding: 12vh;
   animation: slide 1s ease-in;
-}
-
-.holder {
-  background: #ccc;
-  padding: 0.5rem;
-  overflow: hidden;
-}
-
-.news {
-  animation: slide 10s linear infinite;
-
 }
 
 @keyframes slide {
@@ -88,19 +76,6 @@ h1 #maintitle {
     background-position: 22% 0%
   }
 }
-
-.sidebar {
-  height: 100vh;
-  width: 15vw;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
 @media screen and (max-height: 450px) {
