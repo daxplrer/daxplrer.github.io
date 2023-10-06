@@ -93,9 +93,7 @@ h1 #maintitle {
   .section :nth-child(1) {
     display: none;
   }
-  .progress, .progress-bar {
-    display:none
-  }
+  
 }
 
 h3 {
